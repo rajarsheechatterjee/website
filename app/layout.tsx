@@ -1,6 +1,6 @@
 import "./global.css";
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
+import { Nunito } from "next/font/google";
 import { GeistMono } from "geist/font/mono";
 import { Navbar } from "./components/nav";
 import { Analytics } from "@vercel/analytics/react";
@@ -38,6 +38,11 @@ export const metadata: Metadata = {
   },
 };
 
+const nunito = Nunito({
+  subsets: ["latin"],
+  variable: "--font-nunito",
+});
+
 const cx = (...classes) => classes.filter(Boolean).join(" ");
 
 export default function RootLayout({
@@ -50,11 +55,18 @@ export default function RootLayout({
       lang="en"
       className={cx(
         "text-black bg-white dark:text-white dark:bg-black",
-        GeistSans.variable,
-        GeistMono.variable
+        nunito.variable,
+        GeistMono.variable,
+        "font-sans"
       )}
     >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
+      <body
+        className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto"
+        style={{
+          fontFamily:
+            "var(--font-nunito), ui-sans-serif, system-ui, sans-serif",
+        }}
+      >
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}
