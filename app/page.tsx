@@ -87,7 +87,7 @@ export default function Page() {
                     </h4>
                   </div>
                   <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                    Sep 2024 - Present
+                    Sep 2025 - Present
                   </p>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export default function Page() {
                     Software Engineer II
                   </h4>
                   <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                    May 2024 - Present
+                    May 2024 - Sep 2025
                   </p>
                 </div>
               </div>
