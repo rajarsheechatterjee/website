@@ -1,3 +1,5 @@
+import GitHubHeatmap from "app/components/github-heatmap";
+
 export default function Page() {
   return (
     <>
@@ -187,6 +189,11 @@ export default function Page() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="mb-16">
+        <h2 className="mb-8 text-2xl font-semibold tracking-tighter">GitHub</h2>
+        <GitHubHeatmap username="rajarsheechatterjee" />
       </section>
     </>
   );
