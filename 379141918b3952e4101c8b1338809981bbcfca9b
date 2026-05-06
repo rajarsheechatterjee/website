@@ -1,0 +1,97 @@
+app/global.css
+  019dfed9-0550-78d0-a77c-1b634aa45f02 145
+app/blog/posts/lnreader-tiny-package-manager.mdx
+  019dfed9-0550-78d0-a77c-1b634aa45f02 1-136
+app/components/mdx.tsx
+  019dfed9-0550-78d0-a77c-1b634aa45f02 9-14,17-20,22-27,33-40
+app/page.tsx
+  human 50,160
+---
+{
+  "attestations": [
+    {
+      "entries": [
+        {
+          "accepted_lines": 1,
+          "added_lines": 1,
+          "deleted_lines": 0,
+          "hash": "019dfed9-0550-78d0-a77c-1b634aa45f02",
+          "lines": "145",
+          "overridden_lines": 0
+        }
+      ],
+      "file": "app/global.css"
+    },
+    {
+      "entries": [
+        {
+          "accepted_lines": 136,
+          "added_lines": 136,
+          "deleted_lines": 8,
+          "hash": "019dfed9-0550-78d0-a77c-1b634aa45f02",
+          "lines": "1-136",
+          "overridden_lines": 0
+        }
+      ],
+      "file": "app/blog/posts/lnreader-tiny-package-manager.mdx"
+    },
+    {
+      "entries": [
+        {
+          "accepted_lines": 24,
+          "added_lines": 24,
+          "deleted_lines": 2,
+          "hash": "019dfed9-0550-78d0-a77c-1b634aa45f02",
+          "lines": "9-14,17-20,22-27,33-40",
+          "overridden_lines": 0
+        }
+      ],
+      "file": "app/components/mdx.tsx"
+    },
+    {
+      "entries": [
+        {
+          "accepted_lines": 2,
+          "added_lines": 2,
+          "deleted_lines": 0,
+          "hash": "human",
+          "lines": "50,160",
+          "overridden_lines": 0
+        }
+      ],
+      "file": "app/page.tsx"
+    }
+  ],
+  "base_commit_sha": "e54a8e3c0a2698a290acbd52c2466cf8f005fa01",
+  "branch": "main",
+  "commit_sha": "379141918b3952e4101c8b1338809981bbcfca9b",
+  "commit_time": "2026-05-07T01:35:58+05:30",
+  "commit_type": "direct_commit",
+  "git_ai_version": "1.4.2",
+  "prompts": {
+    "019dfed9-0550-78d0-a77c-1b634aa45f02": {
+      "accepted_lines": 161,
+      "agent_id": {
+        "id": "019dfed9-0550-78d0-a77c-1b634aa45f02",
+        "model": "gpt-5.5",
+        "tool": "codex"
+      },
+      "human_author": "Rajarshee Chatterjee <rajarshee.adm@gmail.com>",
+      "messages": [],
+      "overriden_lines": 0,
+      "total_additions": 161,
+      "total_deletions": 10
+    },
+    "human": {
+      "accepted_lines": 2,
+      "agent_id": null,
+      "human_author": "Rajarshee Chatterjee <rajarshee.adm@gmail.com>",
+      "messages": [],
+      "overriden_lines": 0,
+      "total_additions": 2,
+      "total_deletions": 0
+    }
+  },
+  "repo": "git@github.com:rajarsheechatterjee/website.git",
+  "schema_version": "authorship/3.0.0"
+}
