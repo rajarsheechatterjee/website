@@ -142,7 +142,7 @@ input[type="email"] {
   appearance: none;
 }
 
-table {
+.prose table:not([class]) {
   display: block;
   max-width: fit-content;
   overflow-x: auto;

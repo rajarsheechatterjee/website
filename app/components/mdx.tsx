@@ -6,23 +6,38 @@ import React from "react";
 
 function Table({ data }) {
   let headers = data.headers.map((header, index) => (
-    <th key={index}>{header}</th>
+    <th
+      key={index}
+      className="border-b border-neutral-200 px-3 py-2 text-left font-medium text-neutral-900 dark:border-neutral-800 dark:text-neutral-100"
+    >
+      {header}
+    </th>
   ));
   let rows = data.rows.map((row, index) => (
-    <tr key={index}>
+    <tr
+      key={index}
+      className="border-b border-neutral-100 last:border-0 dark:border-neutral-900"
+    >
       {row.map((cell, cellIndex) => (
-        <td key={cellIndex}>{cell}</td>
+        <td
+          key={cellIndex}
+          className="px-3 py-2 align-top text-neutral-800 dark:text-neutral-200"
+        >
+          {cell}
+        </td>
       ))}
     </tr>
   ));
 
   return (
-    <table>
-      <thead>
-        <tr>{headers}</tr>
-      </thead>
-      <tbody>{rows}</tbody>
-    </table>
+    <div className="my-6 overflow-x-auto rounded-lg border border-neutral-200 dark:border-neutral-800">
+      <table className="w-full min-w-[520px] border-collapse text-sm">
+        <thead className="bg-neutral-50 dark:bg-neutral-900">
+          <tr>{headers}</tr>
+        </thead>
+        <tbody>{rows}</tbody>
+      </table>
+    </div>
   );
 }
 

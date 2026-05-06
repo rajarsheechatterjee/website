@@ -47,7 +47,7 @@ export default function Page() {
           >
             LNReader
           </a>
-          {`, an open-source light novel reader for Android with over 2.3k stars on GitHub and 1M+ downloads.`}
+          {`, an open-source light novel reader for Android with over 2.5k stars on GitHub and 1M+ downloads.`}
         </p>
         <p>
           {`I specialize in web and app development with React, TypeScript, and React Native.`}
@@ -157,7 +157,7 @@ export default function Page() {
                 </a>
               </h3>
               <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                2.3k+ stars · 1M+ downloads
+                2.5k+ stars · 1M+ downloads
               </p>
             </div>
             <div>
