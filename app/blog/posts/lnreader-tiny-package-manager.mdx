@@ -16,18 +16,13 @@ Without an abstraction layer, you'd either hardcode support for every site (unsu
 
 Plugins give you a third option: a small shared agreement between the app and each source. Every source adapter answers the same basic questions: what novels are popular, what matches a search, what a novel page contains, and what a chapter contains. The chaos of the web stays inside the plugin. LNReader only ever sees clean, predictable data.
 
-```text
-Source website / API
-   |
-   v
-LNReader plugin  <- your problem
-   |
-   v
-Normalized objects  <- the contract
-   |
-   v
-Reader app UI  <- not your problem
-```
+<figure className="my-6 overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50 p-3 dark:border-neutral-800 dark:bg-neutral-900">
+  <img
+    src="/blog/lnreader-normalization-boundary.svg"
+    alt="LNReader plugin normalization boundary diagram"
+    className="w-full"
+  />
+</figure>
 
 This boundary is the most important idea in the whole system. It doesn't matter if a site serves JSON, server-rendered HTML, paginated chapter lists, or protobuf responses. Whatever mess lives on the other side of that boundary is fully contained. The app never knows the difference.
 
@@ -73,6 +68,14 @@ Instead of a standard module system, plugins get a custom injected `require` tha
 That may sound alarming, because it is still downloaded code being run inside the app. The guardrails matter, but they are not magic. The trust model comes back later.
 
 Once initialized, the plugin lands in two places: an in-memory map for the current session, and a file on disk at a well-known path keyed by plugin ID. Optional custom JS and CSS assets are written alongside it.
+
+<figure className="my-6 overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50 p-3 dark:border-neutral-800 dark:bg-neutral-900">
+  <img
+    src="/blog/lnreader-install-flow.svg"
+    alt="LNReader plugin installation flow diagram"
+    className="w-full"
+  />
+</figure>
 
 ### Lazy Loading Across Restarts
 
