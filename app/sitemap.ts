@@ -1,6 +1,6 @@
 import { getBlogPosts } from "app/blog/utils";
 
-export const baseUrl = "https://rajarsheechatterjee.vercel.app";
+export const baseUrl = "https://www.rajarsheechatterjee.com";
 
 export default async function sitemap() {
   let blogs = getBlogPosts().map((post) => ({

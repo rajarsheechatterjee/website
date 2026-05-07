@@ -11,8 +11,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug);
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  let post = getBlogPosts().find((post) => post.slug === slug);
   if (!post) {
     return;
   }
@@ -24,8 +25,8 @@ export function generateMetadata({ params }) {
     image,
   } = post.metadata;
   let ogImage = image
-    ? image
-    : `${baseUrl}/og?title=${encodeURIComponent(title)}`;
+    ? `${baseUrl}${image}`
+    : `${baseUrl}/og?title=${encodeURIComponent(title)}&description=${encodeURIComponent(description)}&date=${encodeURIComponent(formatDate(publishedTime))}`;
 
   return {
     title,
@@ -74,11 +75,11 @@ export default async function Blog({ params }) {
             description: post.metadata.summary,
             image: post.metadata.image
               ? `${baseUrl}${post.metadata.image}`
-              : `/og?title=${encodeURIComponent(post.metadata.title)}`,
+              : `${baseUrl}/og?title=${encodeURIComponent(post.metadata.title)}&description=${encodeURIComponent(post.metadata.summary)}&date=${encodeURIComponent(formatDate(post.metadata.publishedAt))}`,
             url: `${baseUrl}/blog/${post.slug}`,
             author: {
               "@type": "Person",
-              name: "My Portfolio",
+              name: "Rajarshee Chatterjee",
             },
           }),
         }}
