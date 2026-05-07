@@ -1,0 +1,82 @@
+app/blog/posts/lnreader-tiny-package-manager.mdx
+  019dfed9-0550-78d0-a77c-1b634aa45f02 19-25,72-79
+public/blog/lnreader-install-flow.svg
+  human 1-71
+public/blog/lnreader-normalization-boundary.svg
+  human 1-106
+---
+{
+  "attestations": [
+    {
+      "entries": [
+        {
+          "accepted_lines": 15,
+          "added_lines": 15,
+          "deleted_lines": 12,
+          "hash": "019dfed9-0550-78d0-a77c-1b634aa45f02",
+          "lines": "19-25,72-79",
+          "overridden_lines": 0
+        }
+      ],
+      "file": "app/blog/posts/lnreader-tiny-package-manager.mdx"
+    },
+    {
+      "entries": [
+        {
+          "accepted_lines": 71,
+          "added_lines": 71,
+          "deleted_lines": 0,
+          "hash": "human",
+          "lines": "1-71",
+          "overridden_lines": 0
+        }
+      ],
+      "file": "public/blog/lnreader-install-flow.svg"
+    },
+    {
+      "entries": [
+        {
+          "accepted_lines": 106,
+          "added_lines": 106,
+          "deleted_lines": 0,
+          "hash": "human",
+          "lines": "1-106",
+          "overridden_lines": 0
+        }
+      ],
+      "file": "public/blog/lnreader-normalization-boundary.svg"
+    }
+  ],
+  "base_commit_sha": "1159830cdd6c40a2ca00f460d8dc88e2508c5c70",
+  "branch": "main",
+  "commit_sha": "eea2ba575e46ce535cf723e6bdbbc80dde39dc75",
+  "commit_time": "2026-05-07T11:10:23+05:30",
+  "commit_type": "direct_commit",
+  "git_ai_version": "1.4.2",
+  "prompts": {
+    "019dfed9-0550-78d0-a77c-1b634aa45f02": {
+      "accepted_lines": 15,
+      "agent_id": {
+        "id": "019dfed9-0550-78d0-a77c-1b634aa45f02",
+        "model": "gpt-5.5",
+        "tool": "codex"
+      },
+      "human_author": "Rajarshee Chatterjee <rajarshee.adm@gmail.com>",
+      "messages": [],
+      "overriden_lines": 0,
+      "total_additions": 15,
+      "total_deletions": 12
+    },
+    "human": {
+      "accepted_lines": 177,
+      "agent_id": null,
+      "human_author": "Rajarshee Chatterjee <rajarshee.adm@gmail.com>",
+      "messages": [],
+      "overriden_lines": 0,
+      "total_additions": 177,
+      "total_deletions": 0
+    }
+  },
+  "repo": "git@github.com:rajarsheechatterjee/website.git",
+  "schema_version": "authorship/3.0.0"
+}
